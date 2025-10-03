@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Personal Portfolio</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#E50914",
+            "background-light": "#f8f6f6",
+            "background-dark": "#141414",
+          },
+          fontFamily: {
+            "display": ["Space Grotesk"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style>
+    .group:hover .group-hover\:block {
+      display: block;
+    }
+    .group[open] .group-open\:hidden {
+      display: none;
+    }
+    .group[open] .group-open\:block {
+      display: block;
+    }.no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }.no-scrollbar {
+        -ms-overflow-style: none;scrollbar-width: none;}
+  </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-white">
+<div class="min-h-screen flex flex-col">
+<header class="sticky top-0 z-20 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between py-4 border-b border-white/10">
+<h1 class="text-2xl font-bold text-white">Shirsendu Dhar</h1>
+<p class="text-sm font-medium text-white/80 hidden sm:block">Data Scientist | YOE 4+ | Applied Statistics Post Grad</p>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-10">
+<p class="text-center text-lg text-white/80 max-w-3xl mx-auto mb-12">
+          A highly motivated and results-oriented data scientist with a passion for leveraging data to solve complex problems and drive impactful decisions. Proven ability to analyze large datasets, develop predictive models, and communicate insights effectively. Seeking a challenging role where I can apply my skills and expertise to contribute to the success of a dynamic organization.
+        </p>
+<div class="relative">
+<h2 class="text-2xl font-bold mb-4 px-4 sm:px-0">My Portfolio</h2>
+<div class="flex overflow-x-auto no-scrollbar space-x-4 sm:space-x-6 pb-8 -mx-4 px-4 sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
+<div class="group relative flex-shrink-0 w-60 sm:w-72 cursor-pointer" onclick="openModal('educationModal')">
+<div class="relative rounded overflow-hidden aspect-[2/3] transform transition-transform duration-300 group-hover:scale-105">
+<img alt="Education Poster" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCz5ALLzLyQdL86aea5hJOwQ9qlP5YFxEi6U-oe9RozIJ5e5TKgV2hkBkGlV1ypFrmEf_dCff63E3BdjMMvVHxf9mZV-O0prRYWAc1W8tvQtYjI5dYFVAMT9PFB13FS2_S8RWBV5T8w3VvvtsHm4AHQnjxP9mVbmHyqI4NFjkvRYXlT5hAI81EolFWIGzCfJUCaxIdIxuEG3eVe6dvpWD1VI7hd2ByzqIGiXyOdTtRIPGz89oP8wwV-FTOlH76QVj7TNWGSwfBQiBXl"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<h3 class="text-xl font-bold">Education</h3>
+<div class="hidden group-hover:block mt-2 text-sm text-white/80">
+<p>Post Graduate Diploma in Applied Statistics</p>
+<p>ISI, Kolkata</p>
+</div>
+</div>
+</div>
+</div>
+<div class="group relative flex-shrink-0 w-60 sm:w-72 cursor-pointer" onclick="openModal('certificatesModal')">
+<div class="relative rounded overflow-hidden aspect-[2/3] transform transition-transform duration-300 group-hover:scale-105">
+<img alt="Certificates Poster" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAO5yvfelnXMA4IIOkb_3tCgblyW-ynSNvIccxiQyls3JyJoc_j0tSG0Q-4rE_FOwAJFiQKZi6GtD400cm6YJAXQSuim5ZPoB7OeZMmSqi-htHQHApBPywHPP-GU1r9dH_Oq1CYDvljV8QhgynKqu7n9kqXZJDwa0nmVFxMIsmv4Qi3p0ZnuqSzYNKBkt3oueNAzdnEo0QxBGaJ8jFuFyiJzUW9VqS_0qXnJ4RHbjxjcWAF_RCj5wIv-YPMwxV59anM0ty20uFVYF9r"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<h3 class="text-xl font-bold">Certificates</h3>
+<div class="hidden group-hover:block mt-2 text-sm text-white/80">
+<p>Advanced ML</p>
+<p>Cloud Practitioner</p>
+</div>
+</div>
+</div>
+</div>
+<div class="group relative flex-shrink-0 w-60 sm:w-72 cursor-pointer" onclick="openModal('experienceModal')">
+<div class="relative rounded overflow-hidden aspect-[2/3] transform transition-transform duration-300 group-hover:scale-105">
+<img alt="Experience Poster" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnvfcNAu_bU9FQ0Xh4Rz3n-8Xzoe7Sq9Vj2IJkyPmhg5KOtUBSD-9Ql-QExxweomGhq9VSey6pWIkwv9aqAKf1vEHlg2K0w7Nt5yUPWQTEGPSvyTPWCux9Jyoige06AkKIurQ_jGVT3JR_YwLRnQmgmlnroT2GIEBGsXV9THv-eFwE5Si7aConZgyoZnNd75e90t1lyou5xr8zSIsgK4xPpU01-rY1j4LVxeFrKhpqt5IgRScOUckOmmrJqwqzvkcQmM1_2zXt1Bc8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<h3 class="text-xl font-bold">Experience</h3>
+<div class="hidden group-hover:block mt-2 text-sm text-white/80">
+<p>Data Scientist at TechCorp</p>
+<p>Data Analyst at Data Inc.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="group relative flex-shrink-0 w-60 sm:w-72 cursor-pointer" onclick="openModal('achievementsModal')">
+<div class="relative rounded overflow-hidden aspect-[2/3] transform transition-transform duration-300 group-hover:scale-105">
+<img alt="Achievements Poster" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCemzJX8aF-JUCc53rc_5cFEWM9kKrNNeCZNbxYjtcqrVYmNcJhndD9cpxovhjl6kjQtlVjGZktQ-O8RYHpe60S1ckI6A_rg2KkSpOo2OQ_XAV5iCgmVl1xPNHQE73arNBZ5Q7RPV2bPZFqF-ucPgTggZ7qTisOEDFha2LVULZwY1kugtCtOjPZchDLirOiDrTOYlnI9L0QgqpCzcYvK6xoEHn51YBtI3g69eDrbOAP0FgAAOfHPY4m5ZWoXghVja6jEUF6s3xi7yBs"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-4">
+<h3 class="text-xl font-bold">Achievements</h3>
+<div class="hidden group-hover:block mt-2 text-sm text-white/80">
+<p>Hackathon Winner 2023</p>
+<p>Published Paper</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<div class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 p-4" id="educationModal" onclick="closeModal('educationModal')">
+<div class="bg-background-light dark:bg-background-dark rounded-lg max-w-2xl w-full mx-auto" onclick="event.stopPropagation()">
+<div class="p-6 relative">
+<button class="absolute top-4 right-4 text-white hover:text-primary transition-colors" onclick="closeModal('educationModal')">
+<svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<h2 class="text-2xl font-bold text-primary mb-4">Education</h2>
+<div class="text-white/80 space-y-4">
+<div>
+<h3 class="font-bold text-white">Master of Science in Data Science</h3>
+<p class="text-sm">University of Technology | 2020 - 2022</p>
+<p class="text-sm">GPA: 3.9/4.0</p>
+</div>
+<p><span class="font-semibold text-white">Relevant Coursework:</span> Machine Learning, Deep Learning, Statistical Modeling, Data Visualization, Natural Language Processing.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 p-4" id="certificatesModal" onclick="closeModal('certificatesModal')">
+<div class="bg-background-light dark:bg-background-dark rounded-lg max-w-2xl w-full mx-auto" onclick="event.stopPropagation()">
+<div class="p-6 relative">
+<button class="absolute top-4 right-4 text-white hover:text-primary transition-colors" onclick="closeModal('certificatesModal')">
+<svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<h2 class="text-2xl font-bold text-primary mb-4">Certificates</h2>
+<div class="text-white/80 space-y-4">
+<div>
+<h3 class="font-bold text-white">Advanced Machine Learning</h3>
+<p class="text-sm">Certification Body | 2023</p>
+</div>
+<div>
+<h3 class="font-bold text-white">Cloud Practitioner</h3>
+<p class="text-sm">Cloud Provider | 2022</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 p-4" id="experienceModal" onclick="closeModal('experienceModal')">
+<div class="bg-background-light dark:bg-background-dark rounded-lg max-w-2xl w-full mx-auto" onclick="event.stopPropagation()">
+<div class="p-6 relative">
+<button class="absolute top-4 right-4 text-white hover:text-primary transition-colors" onclick="closeModal('experienceModal')">
+<svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<h2 class="text-2xl font-bold text-primary mb-4">Experience</h2>
+<div class="text-white/80 space-y-4">
+<div>
+<h3 class="font-bold text-white">Data Scientist</h3>
+<p class="text-sm">TechCorp | 2022 - Present</p>
+<ul class="list-disc list-inside mt-2 text-sm">
+<li>Developed and deployed predictive models for customer churn.</li>
+<li>Designed and implemented A/B testing frameworks.</li>
+<li>Created interactive dashboards for business stakeholders.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="fixed inset-0 z-50 hidden items-center justify-center bg-black/80 p-4" id="achievementsModal" onclick="closeModal('achievementsModal')">
+<div class="bg-background-light dark:bg-background-dark rounded-lg max-w-2xl w-full mx-auto" onclick="event.stopPropagation()">
+<div class="p-6 relative">
+<button class="absolute top-4 right-4 text-white hover:text-primary transition-colors" onclick="closeModal('achievementsModal')">
+<svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+<h2 class="text-2xl font-bold text-primary mb-4">Achievements</h2>
+<div class="text-white/80 space-y-4">
+<div>
+<h3 class="font-bold text-white">National Hackathon Winner</h3>
+<p class="text-sm">First Place, AI for Good Challenge | 2023</p>
+</div>
+<div>
+<h3 class="font-bold text-white">Published Research Paper</h3>
+<p class="text-sm">"Novel Approaches to Anomaly Detection" - Journal of Data Science</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+    function openModal(modalId) {
+      document.getElementById(modalId).style.display = 'flex';
+      document.body.style.overflow = 'hidden';
+    }
+    function closeModal(modalId) {
+      document.getElementById(modalId).style.display = 'none';
+      document.body.style.overflow = 'auto';
+    }
+    // Close modal on escape key press
+    document.addEventListener('keydown', function(event) {
+        if (event.key === "Escape") {
+            const modals = document.querySelectorAll('.fixed.inset-0.z-50');
+            modals.forEach(modal => {
+                if(modal.style.display === 'flex') {
+                    closeModal(modal.id);
+                }
+            });
+        }
+    });
+  </script>
+
+</body></html>
