@@ -1,71 +1,156 @@
-<!DOCTYPE html>
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Choose Your Storyline</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@700&amp;display=swap" rel="stylesheet"/>
-<script>
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              primary: "#3589d8",
-              "background-light": "#f8f6f6",
-              "background-dark": "#141414",
-              "spotify-green": "#1DB954",
-            },
-            fontFamily: {
-              display: "Space Grotesk"
-            },
-            borderRadius: {
-              DEFAULT: "0.25rem",
-              lg: "0.5rem",
-              xl: "0.75rem",
-              full: "9999px"
-            },
-          },
-        },
-      };
-    </script>
-<style>
-      .profile-card .profile-image {
-        transition: transform 0.3s ease;
-      }
-      .profile-card:hover .profile-image {
-        transform: scale(1.1);
-        outline: 4px solid #1DB954;
-        box-shadow: 0 0 15px #1DB954;
-      }
-    </style>
-</head>
-<body class="bg-background-light dark:bg-background-dark font-display text-white selection:bg-primary selection:text-white">
-<div class="flex flex-col items-center justify-center min-h-screen">
-<h1 class="text-5xl font-bold text-spotify-green mb-4">Choose Your Storyline</h1>
-<p class="text-lg text-gray-300 mb-12 max-w-xl text-center">I’m Shirsendu Dhar — a Data Scientist with 4+ years’ experience. Explore my journey in three flavors below.</p>
-<div class="flex flex-col md:flex-row gap-8">
-<a class="profile-card group" href="general.html">
-<div class="general">
-<img alt="General Profile" class="profile-image w-40 h-40 md:w-48 md:h-48 object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAiD3M7mX0kwPJ0gdzKa4h9qBrMuo-aUi3W1nufZ-hemHkV1sX6vUEuUB893nbkYE__FOMzuMZwnJ4HM1IvZn1rDMBCuHUdDrvHgtQS4RpzmoMDVwq_2_pT33pcqz3x5irBov7CKAKDPydimFAFBZDmo8ceiwY2vCvQBnD2Pcy741nTDxhpOjBp3SUlaLdD7kYBXpLNMKXqjdqKBLxz2cUaV1lpu2YAI1yEHPXSntVjaLyi6hKqAcIkcoG4oJRUsW1JqcGmAJKYpTMk"/>
-</div>
-<p class="mt-4 text-center text-xl text-gray-400 group-hover:text-white transition-colors">General</p>
-</a>
-<a class="profile-card group" href="alt.html">
-<div class="relative">
-<img alt="Data Scientist – ML Profile" class="profile-image w-40 h-40 md:w-48 md:h-48 object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjiXXpKiyS4jCcqjO7zugA_YFhHGZ7lsuj34P6NJ-G65RIU-CP1h-81xTCXBQqUmZCyjeoHbgKMS4Nc5PUImn16BtYmIYgCZSQrlBwXnAic0Ugug9MbvKEtduWpddky0f3mJ2hBsEcJgBaX1tglU1cnKtjAhMUq60rtki_nMHQw0bf7a1Thp-tOkv-iM3py_1EF3rK0W2p4sRlowH9qFYYlG-YHswmrbq49Y2TsXykLLyu1iStnp3OsqJrAKTp0LBb5l8UFU89cCWN"/>
-</div>
-<p class="mt-4 text-center text-xl text-gray-400 group-hover:text-white transition-colors">Data Scientist – ML</p>
-</a>
-<a class="profile-card group" href="agentic.html">
-<div class="relative">
-<img alt="Data Scientist – Agentic Profile" class="profile-image w-40 h-40 md:w-48 md:h-48 object-cover rounded" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkDdQk2cYmOZZrnJr0VTjwAqI9L5Mob1KkfbWJ-9jEXzrqUKwlu0q2wgB-BVUrDesVGj9iK4nX98N_S_LbgIPQPDoPPMtD2bfvwygO5D7uUoXd4QzI__MC2eDm3Vc24u9YgTcwQS0vcGrE_gG5hY9-qixob9LkAl_8BK42vyBOx5Y9wDeOlMStxOZD8fmP4PJ8faIHq1aUOjMWkFB2AF7AMw_ddT2y4iKDjAIunszHD00WMYPveJNkJ_Hrh_SyYdCMMeg20NJKD7pM"/>
-</div>
-<p class="mt-4 text-center text-xl text-gray-400 group-hover:text-white transition-colors">Data Scientist – Agentic</p>
-</a>
-</div>
-</div>
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta
+      content="Portfolio of Shirsendu Dhar, a data scientist focused on applied statistics, machine learning, and agentic automation."
+      name="description"
+    />
+    <title>Shirsendu Dhar | Data Science Portfolio</title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="assets/site.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="shell nav-row">
+        <a class="brand" href="index.html">
+          <span class="brand-mark">SD</span>
+          <span>Shirsendu Dhar</span>
+        </a>
+        <nav aria-label="Primary" class="nav-links">
+          <a class="nav-link is-active" href="index.html">Home</a>
+          <a class="nav-link" href="general.html">General</a>
+          <a class="nav-link" href="agentic.html">Agentic</a>
+          <a
+            class="nav-link resume-link"
+            href="files/Shirsendu_Dhar_Data_Scientist_Resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Resume
+          </a>
+        </nav>
+      </div>
+    </header>
 
-</body></html>
+    <main class="page">
+      <section class="shell hero">
+        <div class="hero-copy" data-reveal>
+          <span class="eyebrow">Data science portfolio</span>
+          <h1>From rigorous analysis to modern AI workflows.</h1>
+          <p class="lead">
+            I am Shirsendu Dhar, a data scientist with 4+ years of experience,
+            a strong applied statistics foundation, and an increasing focus on
+            AI systems that turn analysis into action.
+          </p>
+          <div class="chip-row">
+            <span class="pill"><span class="dot"></span>Applied Statistics</span>
+            <span class="pill"><span class="dot"></span>Machine Learning</span>
+            <span class="pill"><span class="dot"></span>Experimentation</span>
+            <span class="pill"><span class="dot"></span>Agentic Automation</span>
+          </div>
+          <div class="actions">
+            <a class="button button-primary" href="general.html">Explore profile</a>
+            <a class="button button-secondary" href="agentic.html">See agentic work</a>
+            <a
+              class="button button-ghost"
+              href="files/Shirsendu_Dhar_Data_Scientist_Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open resume
+            </a>
+          </div>
+        </div>
+
+        <div class="surface hero-portrait" data-reveal>
+          <div class="portrait-stage">
+            <div class="portrait-ring"></div>
+            <div class="portrait-frame">
+              <img alt="Portrait of Shirsendu Dhar" src="files/work_photo.jpg" />
+            </div>
+            <div class="portrait-note top">
+              <span class="dot"></span>
+              <div>
+                <strong>4+ years</strong>
+                <span>Data science and analytics experience</span>
+              </div>
+            </div>
+            <div class="portrait-note bottom">
+              <span class="dot"></span>
+              <div>
+                <strong>Resume-ready</strong>
+                <span>Now linked directly into the site</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="shell section section-tight">
+        <div class="section-heading" data-reveal>
+          <div>
+            <h2>Choose the lens</h2>
+            <p>
+              The site now has one visual language, but you can still enter
+              through the angle that fits the conversation best.
+            </p>
+          </div>
+        </div>
+
+        <div class="story-grid">
+          <a class="story-card" href="general.html" data-reveal>
+            <span class="meta">General profile</span>
+            <h3>Start with the broad picture.</h3>
+            <p>
+              Use this when you want the clearest overview of background,
+              strengths, and resume access in one place.
+            </p>
+            <div class="arrow">Open general profile</div>
+          </a>
+
+          <a
+            class="story-card resume-card"
+            href="files/Shirsendu_Dhar_Data_Scientist_Resume.pdf"
+            target="_blank"
+            rel="noreferrer"
+            data-reveal
+          >
+            <span class="meta">Resume</span>
+            <h3>Jump straight to the actual resume.</h3>
+            <p>
+              The PDF is now a first-class part of the experience, not just a
+              file sitting in the repo.
+            </p>
+            <div class="arrow">Open PDF</div>
+          </a>
+
+          <a class="story-card" href="agentic.html" data-reveal>
+            <span class="meta">Agentic focus</span>
+            <h3>See the AI systems direction.</h3>
+            <p>
+              A more forward-looking page on LLM-enabled workflows, retrieval,
+              automation, and applied intelligence patterns.
+            </p>
+            <div class="arrow">Open agentic page</div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell footer-row">
+        <span>Built as a lightweight GitHub Pages portfolio.</span>
+        <span>Data science, ML, and agentic systems.</span>
+      </div>
+    </footer>
+
+    <script src="assets/site.js"></script>
+  </body>
+</html>
